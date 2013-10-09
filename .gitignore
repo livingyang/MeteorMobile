@@ -5,4 +5,4 @@
 phonegap/platforms/*
 phonegap/plugins/*
 !phonegap/plugins/ios.json
-!phonegap/platforms/test.txt
+
