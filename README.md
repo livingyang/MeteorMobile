@@ -12,9 +12,9 @@ The point is: javascript can eval everything into a string. So I define the eval
 Frameworks version
 =========
 
-Meteor: 0.6.5.1
-PhoneGap: 3.1.0
-xCode: 4.6.3
+- Meteor: 0.6.5.1
+- PhoneGap: 3.1.0
+- Xcode: 4.6.3
 
 
 Getting started
