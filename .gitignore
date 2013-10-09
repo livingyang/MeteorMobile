@@ -4,3 +4,4 @@
 # phonegap ignore
 phonegap/platforms
 phonegap/plugins
+!phonegap/plugins/ios.json
