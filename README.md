@@ -20,15 +20,15 @@ Frameworks version
 Getting started
 =========
 
-## 1 run the meteor server
+### 1 run the meteor server
 - cd meteor/
 - meteor
 
-## 2 add Media plugin
+### 2 add Media plugin
 - cd phonegap/
 - cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-media.git
 
-## 3 build phonegap project
+### 3 build phonegap project
 - phonegap build ios
 
 *now you can run the phonegap app and see how the meteor send message to phonegap*
