@@ -5,11 +5,20 @@ if (Meteor.isClient) {
 
   Template.hello.events({
     'click input' : function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
+      console.log("You pressed the button");
+      if (window === window.top) {
+        window.postMessage("send by meteor", "*");
+      } else{
+        window.top.postMessage("send by meteor", "*");
+      };
     }
   });
+
+  Meteor.startup(function () {
+    window.addEventListener("message", function (e) {
+      alert("Meteor receive: " + e.data);
+    }, false);
+  })
 }
 
 if (Meteor.isServer) {

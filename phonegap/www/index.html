@@ -38,6 +38,10 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+            
+            window.addEventListener("message", function (e) {
+              alert("PhoneGap receive: " + e.data);
+            }, false);
         </script>
     </body>
 </html>
