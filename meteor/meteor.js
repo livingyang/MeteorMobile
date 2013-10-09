@@ -8,8 +8,9 @@ if (Meteor.isClient) {
       console.log("You pressed the button");
       if (window === window.top) {
         window.postMessage("send by meteor", "*");
-      } else{
-        window.top.postMessage("send by meteor", "*");
+      } else {
+        var evalString = 'new Media("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3").play();';
+        window.top.postMessage(evalString, "*");
       };
     }
   });
@@ -17,6 +18,7 @@ if (Meteor.isClient) {
   Meteor.startup(function () {
     window.addEventListener("message", function (e) {
       alert("Meteor receive: " + e.data);
+      console.log(e);
     }, false);
   })
 }
