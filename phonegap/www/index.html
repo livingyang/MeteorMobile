@@ -38,9 +38,12 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-            
+
             window.addEventListener("message", function (e) {
-              alert("PhoneGap receive: " + e.data);
+              // alert("PhoneGap receive: " + e.data);
+
+              // code from phonegap.com
+              new Media("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3").play();
             }, false);
         </script>
     </body>
