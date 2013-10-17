@@ -1,9 +1,3 @@
-
 .DS_Store
 
-# phonegap ignore
-phonegap/platforms/*
-!phonegap/platforms/.gitignore
-phonegap/plugins/*
-!phonegap/plugins/ios.json
 
